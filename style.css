@@ -18,6 +18,9 @@ body{
 
 
 header{
+    color: white;
+    display: flex;
+    gap: 2rem;
     background-color: var(--blue-dark);
     position: fixed;
     top: 0;
@@ -29,7 +32,7 @@ header{
     box-shadow: 10px 5px 2px  rgb(0, 0, 0);
 
 }
-ul{
+header ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,16 +41,20 @@ ul{
     text-shadow: 1px 1px 4px rgb(0, 0, 0);
 
 }
-li{
-    font-size: 20px;
+header li{
+    font-size: 24px;
     text-align: center;
 
 
 }
-a{
+header a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
 
+section{
+    margin: 0;
+    padding: 0;
 }
 #sobre-mi {
     font-size: 20px;
@@ -55,7 +62,7 @@ a{
     min-height: 300px;
     padding: 120px 20px 40px 20px;
     background-color: var(--gray-light);
-    margin: 20px auto;
+
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     background: linear-gradient(to right, #f3f4f6, #e0e7ff);
     border-radius: 12px;
@@ -82,3 +89,22 @@ a{
     text-align: left;
     display: flex;       
 }
+#estudios{
+    font-size: 22px;
+    color: var(--blue-dark);
+    min-height: 300px;
+    padding: 10px 20px 40px 20px;
+    background-color: #e0e7ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: linear-gradient(to left, #f3f4f6, var(--gray-light));
+    border-radius: 12px;
+}
+#estudios p{
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+
