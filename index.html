@@ -1,58 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
     <title>Portafolio Pablo Senn</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-                <header>
-                    <h1>Portafolio Pablo Senn </h1>
-                    <ul>
-                        <li>
-                            <a href=""> Sobre mi</a>                        </li>
-                        <li>
-                            <a href=""> Estudios</a>
-                        </li>
-                        <li>
-                            <a href=""> Proyectos</a>
-                        </li>
-                        <li>
-                            <a href=""> Habilidades </a>
-                        </li>
-                        <li>
-                            <a href=""> Logros </a>
-                        </li>
-                    </ul>
-                    
-            </header>
 
-            <section id="sobre-mi">
-                <h2>Sobre mi</h2>
-                <div id="contenido-sobre-mi">
-                <p>¡Hola! Soy Pablo Senn, tengo 20 años y nací en Victoria, Chile, soy estudiante de tercer año de Ingeniería Civil Informática en la Universidad Autónoma de Chile, sede Temuco. <br> <br> Me considero a mí mismo un apasionado de la informática, ávido por aprender cosas nuevas cada día. Esta ambición me ha permitido aplicar mis conocimientos en experiencias y metas enriquecedoras, las cuales, de manera constante, alimentan mi curiosidad y ganas de seguir aprendiendo.
-                    </p>
-                <img src="imagen.jpeg" id="imagen-sobre-mi">
-                </div>
-            </section>
-            <section id="estudios">
-                <h2>Estudios</h2>
-                <ul>
-                    <li>Enseñanza media completa - Colegio Santa Cruz de Victoria (2019-2022) <a href="https://www.colegiosantacruzvictoria.cl/"> <img src="colegio.png" width="30px" height="30px"> </a> </li>
-                    <br>
-                    <li>Estudiante de Ingeniería Civil Informática - Universidad Autónoma de Chile (2023- Actual) <a href="https://www.uautonoma.cl/"> <img src="ua.png" width="60px" height="30px"> </a></li>
-                </ul>
-                <p> Parte fundamental en mi desarrollo como estudiante fueron mis profesores, quienes me han guiado y apoyado en cada paso de mi formación académica.</p>
+    <header>
+        <h1 class="logo">Pablo Senn</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#pasatiempos">Pasatiempos</a></li>
+                <li><a href="#logros">Logros</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                
-            </section>
+    <section id="sobre-mi" class="card">
+        <h2>Sobre mí</h2>
+        <div class="contenido">
+            <p>¡Hola! Soy Pablo Senn, tengo 20 años y nací en Victoria, Chile. 
+            Actualmente soy estudiante de tercer año de Ingeniería Civil Informática en la Universidad Autónoma de Chile, sede Temuco. <br><br>
+            Me considero un apasionado de la informática, siempre con ganas de aprender cosas nuevas. Esta motivación me ha llevado a desarrollar experiencias y metas enriquecedoras que alimentan mi curiosidad día a día.</p>
+            <img src="imagen.jpeg" alt="Foto de Pablo Senn">
+        </div>
+    </section>
 
+    <section id="tecnologias" class="card">
+        <h2>Tecnologías</h2>
+        <div class="grid-tecnologias">
+            <div class="tech">
+                <img src="html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="tech">
+                <img src="python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech">
+                <img src="java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="tech">
+                <img src="react.png" alt="React Native">
+                <p>React Native</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="proyectos" class="card">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+            <div class="proyecto-card">
+                <img src="Turno-zero.png" alt="TurnoZero">
+                <h3>TurnoZero</h3>
+                <p>Página web para la empresa TurnoZero, diseñada para gestionar usuarios de forma eficiente.</p>
+                <a href="https://pablosennc.github.io/TurnoZero.github.io/" target="_blank">Ver proyecto</a>
+            </div>
+            <div class="proyecto-card">
+                <img src="blopa_clases.png" alt="Blopa Clases">
+                <h3>Blopa_Clases</h3>
+                <p>Emprendimiento de clases particulares con presencia en Instagram, ayudando a estudiantes en varias materias.</p>
+                <a href="https://www.instagram.com/blopa_clases/" target="_blank">Ver página</a>
+            </div>
+            <div class="proyecto-card">
+                <img src="proximamente.png" alt="Red social">
+                <h3>Red social móvil</h3>
+                <p>Aplicación en desarrollo para conectar personas mediante publicaciones y filtrado inteligente.</p>
+                <a href="#">Próximamente</a>
+            </div>
+        </div>
+    </section>
 
-    
-    
+    <section id="pasatiempos" class="card">
+        <h2>Pasatiempos</h2>
+        <p>En mis tiempos libres me apasiona el deporte, pasar tiempo en familia, disfrutar de la naturaleza y hacer trekkings.</p>
+    </section>
+
 </body>
-
 </html>
